@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+
+.box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	background-color: grey;
+	border-radius: 20%;
+	width: 200px;
+	height: 200px;
+}
+
+.linkText {
+	font-family: "Silkscreen", cursive;
+	text-decoration: none;
+	color: white;
+	font-size: 32px;
+
+	&:hover {
+		text-decoration: none;
+		color: blue;
+	}
+}
