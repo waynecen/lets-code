@@ -1,21 +1,35 @@
+@import "./variables.module.scss";
+
 .demo {
-	background-color: red;
-	height: 100vh;
 	display: flex;
-	margin: 2rem 3rem;
 }
 
 .title {
+	margin-left: 24px;
+	color: #1b1a19;
+}
+
+.about,
+.musicKeys {
+	width: 50%;
+	height: 100vh;
 }
 
 .about {
-	background-color: #fac670;
-	width: 50%;
-	height: 100vh;
+	background-color: $primary-color;
 }
 
 .musicKeys {
-	background-color: #1b1a19;
-	width: 50%;
-	height: 100vh;
+	background-color: $secondary-color;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-left: 20%;
 }
