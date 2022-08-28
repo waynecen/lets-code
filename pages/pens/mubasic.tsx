@@ -16,13 +16,7 @@ export default function mubasic() {
 				<div className={styles.about}></div>
 				<div className={styles.musicKeys}>
 					<div className={styles.wrapper}>
-						<PianoKey color>M</PianoKey>
-						<PianoKey color={false}>U</PianoKey>
-						<PianoKey color>B</PianoKey>
-						<PianoKey color>A</PianoKey>
-						<PianoKey color={false}>S</PianoKey>
-						<PianoKey color>I</PianoKey>
-						<PianoKey color>C</PianoKey>
+						<PianoKey></PianoKey>
 					</div>
 				</div>
 			</section>
