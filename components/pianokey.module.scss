@@ -1,26 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import "../styles/variables.module.scss";
+
+.wrapper {
+	position: relative;
+	width: 100%;
+}
 
 .colorKey,
 .blackKey {
-	border-top-left-radius: 6px;
-	border-bottom-left-radius: 6px;
+	display: flex;
+	width: 100%;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	margin-bottom: 8px;
 }
 
 .colorKey {
-	display: flex;
-	align-content: center;
-	margin-bottom: 8px;
-	width: 100%;
-	color: black;
-	font-size: 16px;
-	height: 12vh;
+	height: $colorKey-size;
 	background-color: white;
 }
 
 .blackKey {
-	display: flex;
-	width: 100%;
-	height: 12vh;
+	position: absolute;
+	top: $blackKey-size/-1.6;
+	left: 33%;
+	height: $blackKey-size;
 	background-color: black;
 }
 
@@ -31,7 +35,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-left: 5%;
+	margin-left: 3%;
 	padding: 25px;
 	background-color: rgba(126, 126, 126, 0.2);
 	border-radius: 4px;
