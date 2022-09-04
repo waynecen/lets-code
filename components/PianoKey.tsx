@@ -1,28 +1,23 @@
 import styles from "./pianokey.module.scss";
-import { pianoKeyData } from "../data/pianoKeyData.tsx";
+import { pianoKeyData } from "../data/pianoKeyData";
+import ConditionalWrapper from "./ConditionalWrapper";
 
 export default function PianoKey() {
 	const pianoKeys = pianoKeyData.map((key, index) => {
-		return key.isColor ? (
-			<div
+		return (
+			<ConditionalWrapper
 				key={index}
-				className={styles.colorKey}
-				style={{ backgroundColor: key.backgroundColor }}
+				condition={key.isColor}
+				wrapper={(children) => <div className={styles.wrapper}>{children}</div>}
 			>
-				<p className={styles.letterBox}>{key.letter}</p>
-			</div>
-		) : (
-			<div className={styles.wrapper}>
 				<div
-					key={index}
-					className={styles.blackKey}
+					className={key.isColor ? styles.colorKey : styles.blackKey}
 					style={{ backgroundColor: key.backgroundColor }}
 				>
 					<p className={styles.letterBox}>{key.letter}</p>
 				</div>
-			</div>
+			</ConditionalWrapper>
 		);
 	});
-
 	return pianoKeys;
 }
