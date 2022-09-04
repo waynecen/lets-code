@@ -13,11 +13,15 @@
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
 	margin-bottom: 8px;
+	transition-duration: 0.225s;
+	&:hover {
+		transform: translate(24px);
+		transition: 0.195s cubic-bezier(0, 1.22, 1, 0.95);
+	}
 }
 
 .colorKey {
 	height: $colorKey-size;
-	background-color: white;
 }
 
 .blackKey {
@@ -25,7 +29,7 @@
 	top: $blackKey-size/-1.6;
 	left: 33%;
 	height: $blackKey-size;
-	background-color: black;
+	z-index: 999;
 }
 
 .letterBox {
