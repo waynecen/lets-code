@@ -4,6 +4,12 @@ import ConditionalWrapper from "./ConditionalWrapper";
 
 export default function PianoKey() {
 	const pianoKeys = pianoKeyData.map((key, index) => {
+		let audio = new Audio("/music/elevator.mp3");
+
+		const start = () => {
+			audio.play();
+		};
+
 		return (
 			<ConditionalWrapper
 				key={index}
@@ -15,6 +21,7 @@ export default function PianoKey() {
 					style={{ backgroundColor: key.backgroundColor }}
 				>
 					<p className={styles.letterBox}>{key.letter}</p>
+					<button onClick={start}>Play</button>
 				</div>
 			</ConditionalWrapper>
 		);
