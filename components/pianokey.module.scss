@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 @import "../styles/variables.module.scss";
 
 .wrapper {
@@ -9,14 +9,16 @@
 .colorKey,
 .blackKey {
 	display: flex;
+	align-items: center;
 	width: 100%;
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
-	margin-bottom: 8px;
+	border-top-left-radius: $border-size;
+	border-bottom-left-radius: $border-size;
+	margin-bottom: 0.8vmin;
 	transition-duration: 0.225s;
 	&:hover {
 		transform: translate(24px);
 		transition: 0.195s cubic-bezier(0, 1.22, 1, 0.95);
+		cursor: pointer;
 	}
 }
 
@@ -32,15 +34,24 @@
 	z-index: 999;
 }
 
-.letterBox {
+.letterBox,
+.blackLetterBox {
 	font-family: "Poppins", sans-serif;
-	font-size: 1rem;
+	font-size: 1.2rem;
+	font-weight: 600;
+	text-transform: uppercase;
 	color: white;
 	display: flex;
+	width: 8vh;
+	height: 8vh;
 	justify-content: center;
 	align-items: center;
-	margin-left: 3%;
-	padding: 25px;
-	background-color: rgba(126, 126, 126, 0.2);
-	border-radius: 4px;
+	margin-left: 3vh;
+	padding: 1vmin;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: $border-size;
+}
+
+.blackLetterBox {
+	background-color: hsla(0, 0%, 100%, 0.1);
 }
