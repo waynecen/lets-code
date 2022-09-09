@@ -18,7 +18,7 @@ export default function PianoKey() {
 					style={{ backgroundColor: key.backgroundColor }}
 					onClick={play}
 				>
-					<p className={key.isColor ? styles.letterBox : styles.blackLetterBox}>
+					<p className={`${styles.letterBox} ${key.isColor ? "" : styles.black}`}>
 						{key.letter}
 					</p>
 				</div>

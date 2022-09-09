@@ -34,8 +34,7 @@
 	z-index: 999;
 }
 
-.letterBox,
-.blackLetterBox {
+.letterBox {
 	font-family: "Poppins", sans-serif;
 	font-size: 1.2rem;
 	font-weight: 600;
@@ -52,6 +51,6 @@
 	border-radius: $border-size;
 }
 
-.blackLetterBox {
+.black {
 	background-color: hsla(0, 0%, 100%, 0.1);
 }
