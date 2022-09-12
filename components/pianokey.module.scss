@@ -24,6 +24,9 @@
 
 .colorKey {
 	height: $colorKey-size;
+	&:hover {
+		opacity: 0.9;
+	}
 }
 
 .blackKey {
@@ -32,6 +35,9 @@
 	left: 33%;
 	height: $blackKey-size;
 	z-index: 999;
+	&:hover {
+		background-color: #2b2a29 !important;
+	}
 }
 
 .letterBox {
