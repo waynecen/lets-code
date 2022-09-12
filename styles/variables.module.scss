@@ -1,8 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;800;900&display=swap");
+
 // accents
 $primary-color: #fac670;
 $secondary-color: #1b1a19;
+$accent-color: #f37925;
 
 // piano keys
 $colorKey-size: 14vh;
 $blackKey-size: 13vh;
 $border-size: 5px;
+
+// typography
+$primary-font: "Inter", sans-serif;

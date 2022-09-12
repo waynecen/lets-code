@@ -6,12 +6,6 @@ import { useEffect } from "react";
 
 export default function PianoKey() {
 	const pianoKeys = pianoKeyData.map((key) => {
-		const handleKeyDown = (e) => {
-			if (e.key === key.letter) {
-				play();
-			}
-		};
-
 		const [play] = useSound(`/music/${key.audioSource}`, {
 			volume: 0.7,
 			playbackRate: 0.7,
@@ -21,6 +15,12 @@ export default function PianoKey() {
 		useEffect(() => {
 			document.addEventListener("keydown", handleKeyDown, true);
 		}, [play]);
+
+		const handleKeyDown = (e) => {
+			if (e.key === key.letter) {
+				play();
+			}
+		};
 
 		return (
 			<ConditionalWrapper
