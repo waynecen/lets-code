@@ -1,21 +1,73 @@
+@import "./variables.module.scss";
+
 .demo {
-	background-color: red;
-	height: 100vh;
 	display: flex;
-	margin: 2rem 3rem;
+	overflow-x: hidden;
 }
 
-.title {
+.about,
+.musicKeys {
+	width: 50%;
+	height: 100vh;
 }
 
 .about {
-	background-color: #fac670;
-	width: 50%;
-	height: 100vh;
+	font-family: $primary-font;
+	color: $secondary-color;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: $primary-color;
+	padding: 40px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
 }
 
 .musicKeys {
-	background-color: #1b1a19;
-	width: 50%;
-	height: 100vh;
+	background-color: $secondary-color;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-left: 10%;
+}
+
+.title {
+	margin: 0;
+	font-weight: 900;
+}
+
+.logo {
+	width: 32px;
+	height: 32px;
+	background-color: black;
+	border-radius: 4px;
+}
+
+.slogan {
+	font-size: 5rem;
+	font-weight: 800;
+	letter-spacing: -0.2rem;
+	line-height: 85%;
+}
+
+.accent {
+	color: $accent-color;
+}
+
+.description {
+	font-size: 1.1rem;
+	font-weight: 500;
+	max-width: 33vmin;
+	line-height: 125%;
 }
