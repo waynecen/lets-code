@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
 import BoxLink from "../components/BoxLink";
+import utils from "../styles/utils.module.scss";
+import { slugOne } from "../pages/pens/mubasic";
 
 export default function Home() {
 	return (
@@ -9,8 +10,10 @@ export default function Home() {
 			<Head>
 				<title>{siteTitle}</title>
 			</Head>
-			<section className={utilStyles.grid}>
-				<BoxLink route="mubasic">Mubasic</BoxLink>
+			<section className={utils.container}>
+				<BoxLink route={slugOne} index="01">
+					Mubasic
+				</BoxLink>
 				<BoxLink route="2">Coming Soon</BoxLink>
 			</section>
 		</Layout>

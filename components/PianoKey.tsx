@@ -12,18 +12,18 @@ export default function PianoKey() {
 			interrupt: true,
 		});
 
-		useEffect(() => {
-			window.addEventListener("keydown", handleKeyDown, true);
-			return () => {
-				window.removeEventListener("keydown", handleKeyDown);
-			};
-		}, [play]);
-
 		const handleKeyDown = (e) => {
 			if (e.key === key.letter) {
 				play();
 			}
 		};
+
+		useEffect(() => {
+			document.addEventListener("keydown", handleKeyDown, true);
+			return () => {
+				document.removeEventListener("keydown", handleKeyDown, true);
+			};
+		}, [play]);
 
 		return (
 			<ConditionalWrapper
@@ -34,7 +34,7 @@ export default function PianoKey() {
 				<div
 					style={{ backgroundColor: key.backgroundColor }}
 					className={`${key.isColor ? styles.colorKey : styles.blackKey}`}
-					onClick={play}
+					onClick={handleKeyDown}
 				>
 					<p className={`${styles.letterBox} ${key.isColor ? "" : styles.black}`}>
 						{key.letter}
