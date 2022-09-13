@@ -44,14 +44,36 @@
 
 .title {
 	margin: 0;
+	font-size: 1.6rem;
 	font-weight: 900;
+	letter-spacing: -0.05rem;
 }
 
 .logo {
-	width: 32px;
+	display: flex;
+	align-items: center;
+	gap: 1px;
+}
+
+.logoPart,
+.logoMiddlePart,
+.logoTRPart {
+	width: 12px;
+	height: 14px;
+	border-radius: 2px;
+	background-color: $secondary-color;
+}
+
+.logoMiddlePart {
 	height: 32px;
-	background-color: black;
-	border-radius: 4px;
+}
+
+.logoWrapper {
+	align-self: flex-start;
+}
+
+.logoTRPart {
+	margin-bottom: 1px;
 }
 
 .slogan {

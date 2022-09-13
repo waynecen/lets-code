@@ -16,7 +16,14 @@ export default function mubasic() {
 				<div className={styles.about}>
 					<div className={styles.header}>
 						<h1 className={styles.title}>{codeTitle}</h1>
-						<div className={styles.logo}></div>
+						<div className={styles.logo}>
+							<div className={styles.logoPart}></div>
+							<div className={styles.logoMiddlePart}></div>
+							<div className={styles.logoWrapper}>
+								<div className={styles.logoTRPart}></div>
+								<div className={styles.logoPart}></div>
+							</div>
+						</div>
 					</div>
 					<h3 className={styles.slogan}>
 						The <span className={styles.accent}>#1</span>

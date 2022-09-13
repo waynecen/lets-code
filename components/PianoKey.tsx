@@ -7,13 +7,16 @@ import { useEffect } from "react";
 export default function PianoKey() {
 	const pianoKeys = pianoKeyData.map((key) => {
 		const [play] = useSound(`/music/${key.audioSource}`, {
-			volume: 0.7,
+			volume: 0.5,
 			playbackRate: 0.7,
 			interrupt: true,
 		});
 
 		useEffect(() => {
-			document.addEventListener("keydown", handleKeyDown, true);
+			window.addEventListener("keydown", handleKeyDown, true);
+			return () => {
+				window.removeEventListener("keydown", handleKeyDown);
+			};
 		}, [play]);
 
 		const handleKeyDown = (e) => {
