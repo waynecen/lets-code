@@ -7,7 +7,7 @@ export const siteTitle = `Let's Code Playground`;
 
 type LayoutProps = {
 	children: React.ReactNode;
-	home: boolean;
+	home: any;
 };
 
 export default function Layout({ children, home }: LayoutProps) {

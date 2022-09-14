@@ -4,11 +4,10 @@ import styles from "../../styles/Mubasic.module.scss";
 import PianoKey from "../../components/PianoKey";
 
 export const codeTitle: string = "mubasic";
-export const slugOne: string = "mubasic";
 
 export default function mubasic() {
 	return (
-		<Layout>
+		<Layout home={false}>
 			<Head>
 				<title>Let&apos;s Code | Mubasic Piano Keys</title>
 			</Head>
