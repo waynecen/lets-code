@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
-import BoxLink from "../components/BoxLink";
+import BoxLink from "../components/BoxLink.tsx";
 import utils from "../styles/utils.module.scss";
 
 export default function Home() {
