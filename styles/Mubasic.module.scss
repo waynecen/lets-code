@@ -22,6 +22,12 @@
 	padding: 40px;
 }
 
+.about,
+.slogan {
+	font-family: $primary-font;
+	font-weight: 800;
+}
+
 .header {
 	display: flex;
 	justify-content: space-between;
@@ -78,6 +84,7 @@
 }
 
 .slogan {
+	font-family: $primary-font;
 	font-size: 5rem;
 	font-weight: 800;
 	letter-spacing: -0.2rem;
