@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap");
 @import "../styles/variables.module.scss";
 
 .box {
@@ -24,7 +23,7 @@
 	}
 
 	a.linkText {
-		font-family: "Space Grotesk", sans-serif;
+		font-family: $display-font;
 		color: $offwhite;
 		font-size: 1.3rem;
 		font-weight: 600;
