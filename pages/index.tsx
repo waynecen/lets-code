@@ -10,6 +10,7 @@ export default function Home() {
 			<Head>
 				<title>{siteTitle}</title>
 			</Head>
+			<h1>Let's Code</h1>
 			<section className={utils.container}>
 				<BoxLink route="mubasic">Mubasic</BoxLink>
 				<BoxLink route="">Coming Soon</BoxLink>

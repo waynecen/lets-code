@@ -1,26 +1,54 @@
-@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+@import "../styles/variables.module.scss";
 
 .box {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	background-color: grey;
-	border-radius: 4px;
+	border-radius: 8px;
 	width: 200px;
 	height: 200px;
+	border: 1px $outlines solid;
 }
 
 .linkText {
-	font-family: "Silkscreen", cursive;
+	font-family: $display-font;
 	text-decoration: none;
 	color: white;
-	font-size: 32px;
+	font-size: 1.5rem;
+	font-weight: 900;
 	transition-duration: 0.195s;
 	&:hover {
 		text-decoration: none;
-		color: rgba(255, 255, 255, 0.6);
-		transform: scale(1.2) translateY(-4px);
+		color: rgba(255, 255, 255, 0.9);
+		transform: scale(1.2) translateY(-2px);
 		transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 	}
+}
+
+.box:nth-child(1) {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+}
+
+.wrapper {
+	position: relative;
+}
+
+.wrapper:nth-child(1):before {
+	content: " ";
+	border-radius: 8px;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+	background-image: url("../public/images/min-cover-01.png");
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	background-size: cover;
 }

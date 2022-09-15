@@ -1,7 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;800;900&family=Nabla&family=Space+Grotesk:wght@400;500;600;700&display=swap");
 
 // typography
 $primary-font: "Inter", sans-serif;
+$display-font: "Space Grotesk", sans-serif;
 
 // accents
 $primary-color: #fac670;
@@ -12,3 +13,7 @@ $accent-color: #f37925;
 $colorKey-size: 15vh;
 $blackKey-size: 12vh;
 $border-size: 5px;
+
+// homepage
+$bg-color: #24272e;
+$outlines: #3f4452;
