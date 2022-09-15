@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
-import BoxLink from "../components/BoxLink";
 import utils from "../styles/utils.module.scss";
+import BoxLink from "../components/BoxLink";
 
 export default function Home() {
 	return (
@@ -10,12 +10,8 @@ export default function Home() {
 				<title>{siteTitle}</title>
 			</Head>
 			<section className={utils.container}>
-				<BoxLink route="mubasic" index="01">
-					Mubasic
-				</BoxLink>
-				<BoxLink route="" index="02">
-					Coming Soon
-				</BoxLink>
+				<BoxLink route="mubasic">Mubasic</BoxLink>
+				<BoxLink>Coming Soon</BoxLink>
 			</section>
 		</Layout>
 	);
