@@ -1,7 +1,7 @@
 import styles from "./boxlink.module.scss";
 import Link from "next/link";
 
-export default function BoxLink({ children, route }: any) {
+export default function BoxLink({ children, route }) {
 	return (
 		<div className={styles.box}>
 			<Link href={"/pens/" + route}>
