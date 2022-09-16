@@ -1,4 +1,4 @@
-@import "../styles/variables.module.scss";
+@use "styles/variables" as var;
 
 .box {
 	position: relative;
@@ -9,8 +9,8 @@
 	border-radius: 8px;
 	width: 200px;
 	height: 200px;
-	border: 1px $outlines solid;
-	transition: all 0.225s $smooth;
+	border: 1px var.$outlines solid;
+	transition: all 0.225s var.$smooth;
 
 	&:hover {
 		cursor: pointer;
@@ -18,17 +18,18 @@
 	}
 
 	&:hover > a {
-		transform: scale(1.04) translateY(-2px);
-		transition: 0.2s $smooth;
+		transform: translateY(-2px);
+		transition: 0.2s var.$smooth;
 	}
 
 	a.linkText {
-		font-family: $display-font;
-		color: $offwhite;
+		font-family: var.$display-font;
+		color: var.$offwhite;
 		font-size: 1.3rem;
 		font-weight: 600;
 		text-decoration: none;
 		transition-duration: 0.195s;
+
 		&:hover {
 			text-decoration: none;
 		}
@@ -51,15 +52,17 @@
 	opacity: 0.5;
 	background-repeat: no-repeat;
 	background-position: 50% 0;
-	background-size: cover;
-	&:focus {
-		transform: scale(1.15);
-		width: 200%;
-	}
+	background-size: 180%;
+	transition-duration: 0.195s;
+}
+
+.wrapper:hover::before {
+	background-size: 200%;
+	transition: 0.225s var.$smooth;
 }
 
 .wrapper:nth-child(1)::before {
-	background-image: url("../public/images/min-cover-01.png");
+	background-image: url("../../public/images/min-cover-01.png");
 }
 
 .wrapper:nth-child(2) {
