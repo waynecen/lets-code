@@ -1,4 +1,4 @@
-@import "./variables.module.scss";
+@use "styles/variables" as var;
 
 .container {
 	display: flex;
@@ -9,5 +9,5 @@
 }
 
 .header {
-	font-family: $display-font;
+	font-family: var.$display-font;
 }

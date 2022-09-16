@@ -1,9 +1,9 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import styles from "./pianokey.module.scss";
-import { pianoKeyData } from "../data/pianoKeyData";
-import ConditionalWrapper from "./ConditionalWrapper";
+import { useCallback, useEffect } from "react";
 import useSound from "use-sound";
-import { useEffect, useCallback } from "react";
+import { pianoKeyData } from "../data/pianoKeyData";
+import styles from "../styles/components/pianokey.module.scss";
+import ConditionalWrapper from "./ConditionalWrapper";
 
 export default function PianoKey(): any {
 	const pianoKeys = pianoKeyData.map((key) => {

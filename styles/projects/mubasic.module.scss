@@ -1,4 +1,4 @@
-@import "./variables.module.scss";
+@use "styles/variables" as var;
 
 .demo {
 	display: flex;
@@ -13,18 +13,18 @@
 }
 
 .about {
-	font-family: $primary-font;
-	color: $secondary-color;
+	font-family: var.$primary-font;
+	color: var.$secondary-color;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background-color: $primary-color;
+	background-color: var.$primary-color;
 	padding: 40px;
 }
 
 .about,
 .slogan {
-	font-family: $primary-font;
+	font-family: var.$primary-font;
 	font-weight: 800;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .musicKeys {
-	background-color: $secondary-color;
+	background-color: var.$secondary-color;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -68,7 +68,7 @@
 	width: 12px;
 	height: 14px;
 	border-radius: 2px;
-	background-color: $secondary-color;
+	background-color: var.$secondary-color;
 }
 
 .logoMiddlePart {
@@ -84,7 +84,7 @@
 }
 
 .slogan {
-	font-family: $primary-font;
+	font-family: var.$primary-font;
 	font-size: 5rem;
 	font-weight: 800;
 	letter-spacing: -0.2rem;
@@ -92,7 +92,7 @@
 }
 
 .accent {
-	color: $accent-color;
+	color: var.$accent-color;
 }
 
 .description {

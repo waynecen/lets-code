@@ -1,5 +1,5 @@
-import styles from "../styles/components/boxlink.module.scss";
 import Link from "next/link";
+import styles from "../styles/components/boxlink.module.scss";
 
 export default function BoxLink({ children, route }) {
 	return (

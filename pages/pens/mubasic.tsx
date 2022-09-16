@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Layout from "../../components/layout";
-import styles from "../../styles/Mubasic.module.scss";
-import PianoKey from "../../components/PianoKey";
+import Layout from "../../Components/Layout";
+import PianoKey from "../../Components/PianoKey";
+import styles from "../../styles/projects/mubasic.module.scss";
 
 export const codeTitle: string = "mubasic";
 
@@ -15,6 +15,7 @@ export default function mubasic() {
 				<div className={styles.about}>
 					<div className={styles.header}>
 						<h1 className={styles.title}>{codeTitle}</h1>
+
 						<div className={styles.logo}>
 							<div className={styles.logoPart}></div>
 							<div className={styles.logoMiddlePart}></div>

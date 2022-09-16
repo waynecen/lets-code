@@ -1,8 +1,7 @@
 import Head from "next/head";
-import styles from "./layout.module.scss";
 import Link from "next/link";
+import styles from "../styles/components/layout.module.scss";
 
-const name = `Let's Code!`;
 export const siteTitle = `Let's Code Playground`;
 
 type LayoutProps = {

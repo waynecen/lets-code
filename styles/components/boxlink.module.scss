@@ -65,8 +65,12 @@
 	background-image: url("../../public/images/min-cover-01.png");
 }
 
-.wrapper:nth-child(2) {
+.wrapper:last-child {
 	pointer-events: none;
+
+	& .linkText {
+		color: rgb(160, 160, 175);
+	}
 }
 
 .wrapper:hover .box,
