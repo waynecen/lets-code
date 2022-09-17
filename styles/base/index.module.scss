@@ -1,13 +1,27 @@
-@use "styles/variables" as var;
+@use 'styles/variables' as var;
 
 .container {
-	display: flex;
-	padding: 24px;
-	gap: 24px;
-	border: 1px rgba(255, 255, 255, 0.5) solid;
-	border-radius: 4px;
+  display: flex;
+  padding: 24px;
+  gap: 24px;
+
+  border-radius: 4px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.navBar {
+  margin: 0;
+  width: 100%;
 }
 
 .header {
-	font-family: var.$display-font;
+  font-family: var.$display-font;
+}
+
+.description {
+  font-family: var.$primary-font;
+  font-weight: 400;
+  max-width: 55ch;
+  color: var.$secondary-text;
 }

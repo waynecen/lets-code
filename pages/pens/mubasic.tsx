@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Layout from "../../Components/Layout";
-import PianoKey from "../../Components/PianoKey";
+import Layout from "../../components/Layout";
+import PianoKey from "../../components/PianoKey";
 import styles from "../../styles/projects/mubasic.module.scss";
 
 export const codeTitle: string = "mubasic";

@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import styles from "../styles/components/layout.module.scss";
 
-export const siteTitle = `Let's Code Playground`;
+const siteTitle = `Let's Code Playground`;
 
 type LayoutProps = {
 	children: React.ReactNode;
@@ -13,6 +13,7 @@ export default function Layout({ children, home }: LayoutProps) {
 	return (
 		<div className={styles.container}>
 			<Head>
+				<title>{siteTitle}</title>
 				<link rel="icon" href="/favicon.ico" />
 				<meta
 					name="description"
@@ -21,8 +22,6 @@ export default function Layout({ children, home }: LayoutProps) {
 				<meta name="og:title" content={siteTitle} />
 				<meta name="twitter:card" content="summary_large_image" />
 			</Head>
-			<header className={styles.header}></header>
-			<main>{children}</main>
 			{!home && (
 				<div className={styles.backToHome}>
 					<Link href="/">
@@ -30,6 +29,8 @@ export default function Layout({ children, home }: LayoutProps) {
 					</Link>
 				</div>
 			)}
+			<header className={styles.header}></header>
+			<main>{children}</main>
 		</div>
 	);
 }
