@@ -1,6 +1,6 @@
 ## Let's Code[🔗](https://lets-code-chi.vercel.app/)
 
-Coding and breaking down assortment of front-end features from interesting websites.
+Coding and breaking down assortment of front-end features from interesting websites. Built using Next.js, React, and Sass.
 
 ## 🏃 Motivation & Challenges
 
@@ -13,4 +13,8 @@ Every project presents its own challenges and includes it's own takeaways.
 - [ ] Token filter for projects
 - [ ] Subscribe to newsletter form
 
-## <!-- Preview![project preview](preview.png) -->
+<!--📏 Component Testing -->
+
+<!-- Preview![project preview](preview.png) -->
+
+
