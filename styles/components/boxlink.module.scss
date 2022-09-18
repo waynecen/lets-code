@@ -1,79 +1,79 @@
-@use "styles/variables" as var;
+@use 'styles/variables' as var;
 
 .box {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	border-radius: 8px;
-	width: 200px;
-	height: 200px;
-	border: 1px var.$outlines solid;
-	transition: all 0.225s var.$smooth;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 8px;
+  width: 200px;
+  height: 200px;
+  border: 1px var.$outlines solid;
+  transition: all 0.225s var.$smooth;
 
-	&:hover {
-		cursor: pointer;
-		background-size: 200%;
-	}
+  &:hover {
+    cursor: pointer;
+    background-size: 200%;
+  }
 
-	&:hover > a {
-		transform: translateY(-2px);
-		transition: 0.2s var.$smooth;
-	}
+  &:hover > a {
+    transform: translateY(-2px);
+    transition: 0.2s var.$smooth;
+  }
 
-	a.linkText {
-		font-family: var.$display-font;
-		color: var.$offwhite;
-		font-size: 1.3rem;
-		font-weight: 600;
-		text-decoration: none;
-		transition-duration: 0.195s;
+  a.linkText {
+    font-family: var.$display-font;
+    color: var.$offwhite;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: 0.195s;
 
-		&:hover {
-			text-decoration: none;
-		}
-	}
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 .wrapper {
-	position: relative;
+  position: relative;
 }
 
 .wrapper::before {
-	content: " ";
-	border-radius: 8px;
-	display: block;
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	opacity: 0.5;
-	background-repeat: no-repeat;
-	background-position: 50% 0;
-	background-size: 180%;
-	transition-duration: 0.195s;
+  content: ' ';
+  border-radius: 8px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: 180%;
+  transition-duration: 0.195s;
 }
 
 .wrapper:hover::before {
-	background-size: 200%;
-	transition: 0.225s var.$smooth;
+  background-size: 200%;
+  transition: 0.225s var.$smooth;
 }
 
 .wrapper:nth-child(1)::before {
-	background-image: url("../../public/images/min-cover-01.png");
+  background-image: url('../../public/images/min-cover-01.png');
 }
 
 .wrapper:last-child {
-	pointer-events: none;
+  pointer-events: none;
 
-	& .linkText {
-		color: rgb(160, 160, 175);
-	}
+  & .linkText {
+    color: rgb(160, 160, 175);
+  }
 }
 
 .wrapper:hover .box,
 .wrapper:focus .box {
-	transform: scale(1.04);
+  transform: scale(1.04);
 }

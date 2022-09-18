@@ -8,9 +8,8 @@ export default function Home() {
       <div className={styles.navBar}>
         <h1 className={styles.header}>Let&apos;s Code</h1>
         <p className={styles.description}>
-          A compilation of front-end features from interactive websites which
-          have been coded and broken down into demos. Stay tuned for the next
-          demo!
+          A compilation of front-end features from websites and apps which have
+          been broken down into code explanations. Stay tuned!
         </p>
       </div>
       <section className={styles.container}>

@@ -1,27 +1,25 @@
 html,
 body {
-	padding: 0;
-	margin: 0;
-	line-height: 1.6;
-	font-size: 16px;
-	background-color: #24272e;
-	color: white;
+  font-size: 16px;
+  background-color: #24272e;
+  color: white;
 }
 
 * {
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 a {
-	color: #0070f3;
-	text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-	max-width: 100%;
-	display: block;
+  max-width: 100%;
+  display: block;
 }

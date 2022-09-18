@@ -1,62 +1,62 @@
-@use "styles/variables" as var;
+@use 'styles/variables' as var;
 
 .wrapper {
-	position: relative;
-	width: 100%;
+  position: relative;
+  width: 100%;
 }
 
 .colorKey,
 .blackKey {
-	display: flex;
-	align-items: center;
-	width: 100%;
-	border-top-left-radius: var.$border-size;
-	border-bottom-left-radius: var.$border-size;
-	margin-bottom: 0.8vmin;
-	transition-duration: 0.225s;
-	&:hover {
-		transform: translate(24px);
-		transition: 0.195s cubic-bezier(0, 1.22, 1, 0.95);
-		cursor: pointer;
-	}
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-top-left-radius: var.$border-size;
+  border-bottom-left-radius: var.$border-size;
+  margin-bottom: 0.8vmin;
+  transition-duration: 0.225s;
+  &:hover {
+    transform: translate(24px);
+    transition: 0.195s cubic-bezier(0, 1.22, 1, 0.95);
+    cursor: pointer;
+  }
 }
 
 .colorKey {
-	height: var.$colorKey-size;
-	&:hover {
-		opacity: 0.9;
-	}
+  height: var.$colorKey-size;
+  &:hover {
+    opacity: 0.9;
+  }
 }
 
 .blackKey {
-	position: absolute;
-	top: var.$blackKey-size/-1.6;
-	left: 33%;
-	height: var.$blackKey-size;
-	z-index: 999;
-	&:hover {
-		background-color: #2b2a29 !important;
-	}
+  position: absolute;
+  top: var.$blackKey-size/-1.6;
+  left: 33%;
+  height: var.$blackKey-size;
+  z-index: 999;
+  &:hover {
+    background-color: #2b2a29 !important;
+  }
 }
 
 .letterBox {
-	font-family: var.$primary-font;
-	font-size: 1.2rem;
-	font-weight: 600;
-	text-transform: uppercase;
-	color: white;
-	display: flex;
-	width: 8vh;
-	height: 8vh;
-	justify-content: center;
-	align-items: center;
-	margin-left: 3vh;
-	padding: 1vmin;
-	background-color: rgba(0, 0, 0, 0.1);
-	border-radius: var.$border-size;
+  font-family: var.$primary-font;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  width: 8vh;
+  height: 8vh;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3vh;
+  padding: 1vmin;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: var.$border-size;
 }
 
 .black {
-	margin-left: 2vh;
-	background-color: hsla(0, 0%, 100%, 0.1);
+  margin-left: 2vh;
+  background-color: hsla(0, 0%, 100%, 0.1);
 }
