@@ -1,4 +1,4 @@
-## Let's Code[🔗](https://lets-code-chi.vercel.app/)
+## [🔗](https://lets-code-chi.vercel.app/)Let's Code
 
 Coding and breaking down assortment of front-end features from interesting websites. Built using Next.js, React, and Sass.
 
