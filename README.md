@@ -9,9 +9,10 @@ Every project presents its own challenges and includes it's own takeaways.
 
 ## 🚧 To Do
 
-- [ ] Mobile-friendly
+- [x] Mobile-friendly
 - [ ] Token filter for projects
 - [ ] Subscribe to newsletter form
+- [ ] Footer, navigation links
 
 <!--📏 Component Testing -->
 
