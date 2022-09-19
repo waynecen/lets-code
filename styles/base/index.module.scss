@@ -1,4 +1,4 @@
-@use 'styles/variables' as var;
+@use 'styles/variables' as *;
 
 .container {
   display: flex;
@@ -12,15 +12,21 @@
 }
 
 .header {
-  font-family: var.$display-font;
+  font-family: $display-font;
   margin: 0;
 }
 
 .description {
-  font-family: var.$primary-font;
+  color: $secondary-text;
+  font-family: $primary-font;
   font-weight: 400;
   max-width: 55ch;
-  color: var.$secondary-text;
   line-height: 140%;
-  margin: 8px 0 16px 0;
+  margin: 8px 0 32px 0;
+}
+
+@media screen and (max-width: $phone-max) {
+  .container {
+    flex-direction: column;
+  }
 }

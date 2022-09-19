@@ -1,103 +1,172 @@
-@use "styles/variables" as var;
+@use 'styles/variables' as *;
 
 .demo {
-	display: flex;
-	overflow-x: hidden;
-	border-radius: 16px;
+  display: flex;
+  overflow-x: hidden;
+  border-radius: 16px;
+
+  .about,
+  .musicKeys {
+    width: 50%;
+    height: 100vh;
+  }
+
+  .about {
+    font-family: $primary-font;
+    color: $secondary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $primary-color;
+    padding: 40px;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 1px;
+
+        .logoPart,
+        .logoMiddlePart,
+        .logoTRPart {
+          width: 12px;
+          height: 14px;
+          border-radius: 2px;
+          background-color: $secondary-color;
+        }
+
+        .logoMiddlePart {
+          height: 32px;
+        }
+
+        .logoWrapper {
+          margin-top: -6px;
+          align-self: flex-start;
+
+          .logoTRPart {
+            margin-bottom: 1px;
+          }
+        }
+      }
+    }
+
+    .title {
+      margin: 0;
+      font-size: 1.6rem;
+      font-weight: 900;
+      letter-spacing: -0.05rem;
+    }
+  }
+
+  .about,
+  .slogan {
+    font-family: $primary-font;
+    font-weight: 800;
+  }
+
+  .musicKeys {
+    background-color: $secondary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+  }
+  .slogan {
+    font-family: $primary-font;
+    font-size: 5rem;
+    font-weight: 800;
+    letter-spacing: -0.2rem;
+    line-height: 85%;
+
+    .accent {
+      color: $accent-color;
+    }
+  }
+
+  .description {
+    font-size: 1.1rem;
+    font-weight: 500;
+    max-width: 33vmin;
+    line-height: 125%;
+  }
 }
 
-.about,
-.musicKeys {
-	width: 50%;
-	height: 100vh;
+@media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+  .demo {
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: hidden;
+
+    .about,
+    .musicKeys {
+      width: 100%;
+      gap: 60px;
+      height: 50%;
+    }
+
+    .slogan {
+      font-size: 3.2rem;
+    }
+
+    .description {
+      font-size: 1rem;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: row;
+      height: 50vh;
+      margin-top: 32px;
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+  }
 }
 
-.about {
-	font-family: var.$primary-font;
-	color: var.$secondary-color;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	background-color: var.$primary-color;
-	padding: 40px;
-}
+@media screen and (max-width: $phone-max) {
+  .demo {
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: hidden;
 
-.about,
-.slogan {
-	font-family: var.$primary-font;
-	font-weight: 800;
-}
+    .about,
+    .musicKeys {
+      width: 100%;
+      height: 50%;
+    }
 
-.header {
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-}
+    .about {
+      padding: 16px;
+    }
 
-.musicKeys {
-	background-color: var.$secondary-color;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
+    .slogan {
+      font-size: 2.8rem;
+      letter-spacing: -0.1rem;
+    }
 
-.wrapper {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin-left: 10%;
-}
+    .description {
+      font-size: 0.9rem;
+      max-width: 24ch;
+    }
 
-.title {
-	margin: 0;
-	font-size: 1.6rem;
-	font-weight: 900;
-	letter-spacing: -0.05rem;
-}
-
-.logo {
-	display: flex;
-	align-items: center;
-	gap: 1px;
-}
-
-.logoPart,
-.logoMiddlePart,
-.logoTRPart {
-	width: 12px;
-	height: 14px;
-	border-radius: 2px;
-	background-color: var.$secondary-color;
-}
-
-.logoMiddlePart {
-	height: 32px;
-}
-
-.logoWrapper {
-	align-self: flex-start;
-}
-
-.logoTRPart {
-	margin-bottom: 1px;
-}
-
-.slogan {
-	font-family: var.$primary-font;
-	font-size: 5rem;
-	font-weight: 800;
-	letter-spacing: -0.2rem;
-	line-height: 85%;
-}
-
-.accent {
-	color: var.$accent-color;
-}
-
-.description {
-	font-size: 1.1rem;
-	font-weight: 500;
-	max-width: 33vmin;
-	line-height: 125%;
+    .wrapper {
+      display: flex;
+      flex-direction: row;
+      height: 50vh;
+      margin-top: 16px;
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+  }
 }

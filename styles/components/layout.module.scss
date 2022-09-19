@@ -1,26 +1,33 @@
-@use "styles/variables" as var;
+@use 'styles/variables' as *;
 
 .container {
-	min-height: 100vh;
-	height: 100%;
-	padding: 32px;
+  width: 100%;
+  height: 100%;
+  padding: 32px;
 }
 
 .header {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .backToHome {
-	display: flex;
-	flex-direction: column;
-	font-family: var.$manrope;
-	font-weight: 700;
-	margin: 0;
-	padding: 16px;
+  display: flex;
+  flex-direction: column;
+  font-family: $manrope;
+  font-weight: 700;
+  width: fit-content;
+  margin: 0;
+  padding: 16px;
 
-	a {
-		color: var.$offwhite;
-	}
+  a {
+    color: $offwhite;
+  }
+}
+
+@media screen and (max-width: $phone-max) {
+  .backToHome {
+    padding-left: 0;
+  }
 }
