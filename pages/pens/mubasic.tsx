@@ -7,7 +7,8 @@ import styles from '../../styles/projects/mubasic.module.scss'
 
 export const codeTitle: string = 'mubasic'
 const originalSite: string = 'https://www.mubasic.com/'
-const mediumUrl: string = ''
+const mediumUrl: string =
+  'https://medium.com/@wayne.cen/lets-code-mubasic-piano-keys-3ac397d3df1d'
 
 export default function mubasic() {
   return (
