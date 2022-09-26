@@ -15,7 +15,7 @@ export default function Home() {
       <section className={styles.container}>
         <BoxLink route="mubasic">Mubasic</BoxLink>
         <BoxLink route="">
-          Coming Soon<br></br>🚧👷🔧
+          Next up:<br></br> Knucklebones<br></br>🚧👷🔧
         </BoxLink>
       </section>
     </Layout>
