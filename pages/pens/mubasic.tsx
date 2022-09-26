@@ -6,12 +6,12 @@ import PianoKey from '../../components/PianoKey'
 import styles from '../../styles/projects/mubasic.module.scss'
 
 export const codeTitle: string = 'mubasic'
-const original: string = 'https://www.mubasic.com/'
+const originalSite: string = 'https://www.mubasic.com/'
 const mediumUrl: string = ''
 
 export default function mubasic() {
   return (
-    <Layout home={false} originalSite={original}>
+    <Layout home={false}>
       <Head>
         <title>Let&apos;s Code | Mubasic Piano Keys</title>
       </Head>
@@ -46,12 +46,19 @@ export default function mubasic() {
         </div>
       </section>
       <section className={styles.projectDetails}>
-        <Link href={mediumUrl}>
-          <a className={styles.mediumLink} target="_blank">
-            Read the article &nbsp;
-            <i className="fa-solid fa-up-right-from-square"></i>
-          </a>
-        </Link>
+        <div className={styles.linkWrapper}>
+          <Link href={mediumUrl}>
+            <a className={styles.mediumLink} target="_blank">
+              Read the article &nbsp;
+              <i className="fa-solid fa-up-right-from-square"></i>
+            </a>
+          </Link>
+          <Link href={originalSite}>
+            <a className={styles.originalLink} target="_blank">
+              Original <i className="fa-solid fa-up-right-from-square"></i>
+            </a>
+          </Link>
+        </div>
         <p className={styles.projectOverview}>
           Learn how to implement sound in your project. <br></br>
           <br></br>This project isn&apos;t limited to piano keys. Imagine other

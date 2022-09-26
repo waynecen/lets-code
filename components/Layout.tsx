@@ -8,10 +8,9 @@ const siteTitle = `Let's Code Playground`
 type LayoutProps = {
   children: React.ReactNode
   home: any
-  originalSite: string
 }
 
-export default function Layout({ children, home, originalSite }: LayoutProps) {
+export default function Layout({ children, home }: LayoutProps) {
   return (
     <div className={styles.container}>
       <Head>
@@ -28,11 +27,6 @@ export default function Layout({ children, home, originalSite }: LayoutProps) {
         <div className={styles.links}>
           <Link href="/">
             <a className={styles.backToHome}>← Back to home</a>
-          </Link>
-          <Link href={originalSite}>
-            <a className={styles.originalLink} target="_blank">
-              Original <i className="fa-solid fa-up-right-from-square"></i>
-            </a>
           </Link>
         </div>
       )}
