@@ -32,7 +32,7 @@ export default function PianoKey(): any {
     c: () => play({ id: 'jujutsu' }),
   })
 
-  const pianoItems = pianoKeyData.map((key) => {
+  const pianoKeys = pianoKeyData.map((key) => {
     return (
       <ConditionalWrapper
         key={key.id}
@@ -55,5 +55,5 @@ export default function PianoKey(): any {
       </ConditionalWrapper>
     )
   })
-  return pianoItems
+  return pianoKeys
 }

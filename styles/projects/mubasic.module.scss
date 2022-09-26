@@ -102,6 +102,40 @@
   }
 }
 
+.projectDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  height: 33vmin;
+}
+
+.projectOverview {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 1rem;
+  width: 60ch;
+  line-height: 1.4rem;
+}
+
+.mediumLink {
+  width: fit-content;
+  background-color: white;
+  border-radius: 4px;
+  margin-top: 60px;
+  padding: 8px 12px 8px 12px;
+  font-family: $display-font;
+  font-size: 1rem;
+  font-weight: 500;
+  color: $black-text;
+  transition: 0.195s $smooth;
+
+  &:hover {
+    color: $text-hover;
+    transition: 0.325s $smooth;
+  }
+}
+
 @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
   .demo {
     flex-direction: column;

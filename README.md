@@ -10,6 +10,7 @@ Every project presents its own challenges and includes it's own takeaways.
 ## 🚧 To Do
 
 - [x] Mobile-friendly
+- [ ] Code snippets for each project
 - [ ] Token filter for projects
 - [ ] Subscribe to newsletter form
 - [ ] Footer, navigation links
@@ -17,5 +18,3 @@ Every project presents its own challenges and includes it's own takeaways.
 <!--📏 Component Testing -->
 
 <!-- Preview![project preview](preview.png) -->
-
-
